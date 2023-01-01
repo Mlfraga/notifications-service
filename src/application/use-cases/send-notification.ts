@@ -28,8 +28,6 @@ export class SendNotification {
       content: new Content(content),
     });
 
-    console.log('notification: ', notification);
-
     await this.notificationsRepository.create(notification);
 
     return { notification };
